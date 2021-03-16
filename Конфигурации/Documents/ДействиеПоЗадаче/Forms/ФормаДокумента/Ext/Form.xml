@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаИстория" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.История</CommandName>
+				<ExtendedTooltip name="ФормаИсторияРасширеннаяПодсказка" id="39"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКоординатора" id="420">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполняет координатор</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа координатора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаКоординатораРасширеннаяПодсказка" id="421"/>
+			<ChildItems>
+				<UsualGroup name="Группа11" id="426">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="427"/>
+					<ChildItems>
+						<InputField name="Задача" id="5">
+							<DataPath>Объект.Задача</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ЗадачаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="ЗадачаНаименование" id="25">
+							<DataPath>Объект.Задача.Description</DataPath>
+							<ContextMenu name="ЗадачаНаименованиеКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ЗадачаНаименованиеРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="БизнесРешение" id="166">
+							<DataPath>Объект.БизнесРешение</DataPath>
+							<ContextMenu name="БизнесРешениеКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="БизнесРешениеРасширеннаяПодсказка" id="168"/>
+						</InputField>
+						<InputField name="Направление" id="458">
+							<DataPath>Объект.Направление</DataPath>
+							<ContextMenu name="НаправлениеКонтекстноеМеню" id="459"/>
+							<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="460"/>
+						</InputField>
+						<InputField name="Приоритет" id="155">
+							<DataPath>Объект.Приоритет</DataPath>
+							<ContextMenu name="ПриоритетКонтекстноеМеню" id="156"/>
+							<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="157"/>
+						</InputField>
+						<CheckBoxField name="РаботыВыполнены" id="101">
+							<DataPath>Объект.РаботыВыполнены</DataPath>
+							<TitleTextColor>#00A300</TitleTextColor>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РаботыВыполненыКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="РаботыВыполненыРасширеннаяПодсказка" id="103"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа9" id="422">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="423"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="104">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<InputField name="Дата" id="74">
+									<DataPath>Объект.Date</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<Width>9</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="Инициатор" id="21">
+									<DataPath>Объект.Инициатор</DataPath>
+									<ContextMenu name="ИнициаторКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="Исполнитель" id="19">
+									<DataPath>Объект.Исполнитель</DataPath>
+									<ContextMenu name="ИсполнительКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="44"/>
+								</InputField>
+								<InputField name="Статус" id="23">
+									<DataPath>Объект.Статус</DataPath>
+									<ContextMenu name="СтатусКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="46"/>
+									<Events>
+										<Event name="OnChange">СтатусПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ИнтеграцияНадпись" id="466">
+									<TextColor>#3366FF</TextColor>
+									<ContextMenu name="ИнтеграцияНадписьКонтекстноеМеню" id="467"/>
+									<ExtendedTooltip name="ИнтеграцияНадписьРасширеннаяПодсказка" id="468"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="158">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="159"/>
+							<ChildItems>
+								<InputField name="КоличествоПСС" id="383">
+									<DataPath>Объект.КоличествоПСС</DataPath>
+									<ContextMenu name="КоличествоПССКонтекстноеМеню" id="384"/>
+									<ExtendedTooltip name="КоличествоПССРасширеннаяПодсказка" id="385"/>
+								</InputField>
+								<InputField name="КоличествоВозвратовНаДоработку" id="386">
+									<DataPath>Объект.КоличествоВозвратовНаДоработку</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кол-во возвратов на доработку</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КоличествоВозвратовНаДоработкуКонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="КоличествоВозвратовНаДоработкуРасширеннаяПодсказка" id="388"/>
+								</InputField>
+								<InputField name="ЧасыДоФинала" id="152">
+									<DataPath>Объект.ЧасыДоФинала</DataPath>
+									<ContextMenu name="ЧасыДоФиналаКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ЧасыДоФиналаРасширеннаяПодсказка" id="154"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="239">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="240"/>
+							<ChildItems>
+								<InputField name="ДатаЗадачи" id="234">
+									<DataPath>Объект.ДатаЗадачи</DataPath>
+									<ContextMenu name="ДатаЗадачиКонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="ДатаЗадачиРасширеннаяПодсказка" id="236"/>
+								</InputField>
+								<InputField name="ДатаЧТЗ" id="231">
+									<DataPath>Объект.ДатаЧТЗ</DataPath>
+									<MultiLine>false</MultiLine>
+									<ContextMenu name="ДатаЧТЗКонтекстноеМеню" id="232"/>
+									<ExtendedTooltip name="ДатаЧТЗРасширеннаяПодсказка" id="233"/>
+								</InputField>
+								<InputField name="ДатаРелиза" id="441">
+									<DataPath>Объект.ДатаРелиза</DataPath>
+									<ContextMenu name="ДатаРелизаКонтекстноеМеню" id="442"/>
+									<ExtendedTooltip name="ДатаРелизаРасширеннаяПодсказка" id="443"/>
+									<Events>
+										<Event name="OnChange">ДатаРелизаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПлановоеОкончаниеРаботПоСтатусу" id="98">
+									<DataPath>Объект.ПлановоеОкончаниеРаботПоСтатусу</DataPath>
+									<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+									<TitleFont ref="style:TextFont" kind="StyleItem"/>
+									<ContextMenu name="ПлановоеОкончаниеРаботПоСтатусуКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ПлановоеОкончаниеРаботПоСтатусуРасширеннаяПодсказка" id="100"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ЭтапыРеализации" id="444">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Этапы реализации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Этапы реализации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЭтапыРеализацииРасширеннаяПодсказка" id="445"/>
+							<ChildItems>
+								<LabelDecoration name="Тестирование" id="446">
+									<TextColor>#3366FF</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тестирование</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТестированиеКонтекстноеМеню" id="447"/>
+									<ExtendedTooltip name="ТестированиеРасширеннаяПодсказка" id="448"/>
+								</LabelDecoration>
+								<LabelDecoration name="Согласования" id="452">
+									<TextColor>#3366FF</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Согласования разработки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СогласованияКонтекстноеМеню" id="453"/>
+									<ExtendedTooltip name="СогласованияРасширеннаяПодсказка" id="454"/>
+								</LabelDecoration>
+								<LabelDecoration name="ПереносВРелиз" id="449">
+									<TextColor>#3366FF</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перенос в релиз</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПереносВРелизКонтекстноеМеню" id="450"/>
+									<ExtendedTooltip name="ПереносВРелизРасширеннаяПодсказка" id="451"/>
+								</LabelDecoration>
+								<LabelDecoration name="Настройка" id="455">
+									<TextColor>#3366FF</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НастройкаКонтекстноеМеню" id="456"/>
+									<ExtendedTooltip name="НастройкаРасширеннаяПодсказка" id="457"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа10" id="424">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="425"/>
+					<ChildItems>
+						<InputField name="КомментарийПоСменеСтатуса" id="95">
+							<DataPath>Объект.ДополнительнаяИнформация</DataPath>
+							<Width>90</Width>
+							<ContextMenu name="КомментарийПоСменеСтатусаКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="КомментарийПоСменеСтатусаРасширеннаяПодсказка" id="97"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРазработчика" id="418">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполняет разработчик </v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разработчик заполняет только эти реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаРазработчикаРасширеннаяПодсказка" id="419"/>
+			<ChildItems>
+				<UsualGroup name="Группа8" id="416">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="417"/>
+					<ChildItems>
+						<InputField name="Комментарий" id="17">
+							<DataPath>Объект.КомментарийПоЗадаче</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>93</Width>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="52"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="437">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="438"/>
+					<ChildItems>
+						<InputField name="ПроцентПодготовкиЧТЗ_Число" id="431">
+							<DataPath>Объект.ПроцентПодготовкиЧТЗ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ПроцентПодготовкиЧТЗ_ЧислоКонтекстноеМеню" id="432"/>
+							<ExtendedTooltip name="ПроцентПодготовкиЧТЗ_ЧислоРасширеннаяПодсказка" id="433"/>
+						</InputField>
+						<RadioButtonField name="ПроцентПодготовкиЧТЗ" id="428">
+							<DataPath>Объект.ПроцентПодготовкиЧТЗ</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>RadioButtons</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не выполняется</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5% Изучение</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">5</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>50% </v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">50</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>90%  </v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">90</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>100% На согласовании</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">100</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПроцентПодготовкиЧТЗКонтекстноеМеню" id="429"/>
+							<ExtendedTooltip name="ПроцентПодготовкиЧТЗРасширеннаяПодсказка" id="430"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="439">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="440"/>
+					<ChildItems>
+						<InputField name="ПроцентВыполненияЧисло" id="434">
+							<DataPath>Объект.ПроцентВыполнения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не выполняется</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5% Изучение</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">5</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>50% выполнения</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">50</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>70% Тест</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">70</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>80% ПТ,СР,ПН,РР</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">80</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>90% В релизе</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">90</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>100% Продуктив</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">100</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПроцентВыполненияЧислоКонтекстноеМеню" id="435"/>
+							<ExtendedTooltip name="ПроцентВыполненияЧислоРасширеннаяПодсказка" id="436"/>
+						</InputField>
+						<RadioButtonField name="ПроцентВыполнения" id="380">
+							<DataPath>Объект.ПроцентВыполнения</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>RadioButtons</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не выполняется</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>5% Изучение</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">5</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>50% выполнения</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">50</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>70% Тест</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">70</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>80% ПТ,СР,ПН,РР</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">80</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>90% В релизе</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">90</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>100% Продуктив</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">100</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПроцентВыполненияКонтекстноеМеню" id="381"/>
+							<ExtendedTooltip name="ПроцентВыполненияРасширеннаяПодсказка" id="382"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="461">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="462"/>
+					<ChildItems>
+						<CheckBoxField name="Интеграция" id="463">
+							<DataPath>Объект.Интеграция</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Флаг устанавливается для учета в документе оценки трудозатрат специалистов смежных подразделений при тестировании</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИнтеграцияКонтекстноеМеню" id="464"/>
+							<ExtendedTooltip name="ИнтеграцияРасширеннаяПодсказка" id="465"/>
+							<Events>
+								<Event name="OnChange">ИнтеграцияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы1" id="469">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницы1РасширеннаяПодсказка" id="470"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницы1_РаспределениеТРЗ" id="471">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распределение ТРЗ (заполняет координатор)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы1 распределение ТРЗ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницы1_РаспределениеТРЗРасширеннаяПодсказка" id="472"/>
+					<ChildItems>
+						<Table name="ТРЗпоСтатусам" id="473">
+							<Footer>true</Footer>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТРЗпоСтатусам</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТРЗпоСтатусамКонтекстноеМеню" id="474"/>
+							<AutoCommandBar name="ТРЗпоСтатусамКоманднаяПанель" id="475">
+								<ChildItems>
+									<Button name="ТРЗпоСтатусамПеренестиДанныеВРегистрЗадачиСотрудников" id="513">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПеренестиДанныеВРегистрЗадачиСотрудников</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Перенести данные в регистр и обновить строки</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТРЗпоСтатусамПеренестиДанныеВРегистрЗадачиСотрудниковРасширеннаяПодсказка" id="514"/>
+									</Button>
+									<Button name="ТРЗпоСтатусамОбновитьСтроки" id="515">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьСтроки</CommandName>
+										<ExtendedTooltip name="ТРЗпоСтатусамОбновитьСтрокиРасширеннаяПодсказка" id="516"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТРЗпоСтатусамРасширеннаяПодсказка" id="476"/>
+							<SearchStringAddition name="ТРЗпоСтатусамСтрокаПоиска" id="477">
+								<AdditionSource>
+									<Item>ТРЗпоСтатусам</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТРЗпоСтатусамСтрокаПоискаКонтекстноеМеню" id="478"/>
+								<ExtendedTooltip name="ТРЗпоСтатусамСтрокаПоискаРасширеннаяПодсказка" id="479"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТРЗпоСтатусамСостояниеПросмотра" id="480">
+								<AdditionSource>
+									<Item>ТРЗпоСтатусам</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТРЗпоСтатусамСостояниеПросмотраКонтекстноеМеню" id="481"/>
+								<ExtendedTooltip name="ТРЗпоСтатусамСостояниеПросмотраРасширеннаяПодсказка" id="482"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТРЗпоСтатусамУправлениеПоиском" id="483">
+								<AdditionSource>
+									<Item>ТРЗпоСтатусам</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТРЗпоСтатусамУправлениеПоискомКонтекстноеМеню" id="484"/>
+								<ExtendedTooltip name="ТРЗпоСтатусамУправлениеПоискомРасширеннаяПодсказка" id="485"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd"/>
+								<Event name="OnActivateCell"/>
+								<Event name="OnChange">ТРЗпоСтатусамПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ТРЗпоСтатусамНомерСтроки" id="486">
+									<DataPath>Объект.ТРЗпоСтатусам.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамНомерСтрокиКонтекстноеМеню" id="487"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамНомерСтрокиРасширеннаяПодсказка" id="488"/>
+								</LabelField>
+								<InputField name="ТРЗпоСтатусамПериод" id="489">
+									<DataPath>Объект.ТРЗпоСтатусам.Период</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамПериодКонтекстноеМеню" id="490"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамПериодРасширеннаяПодсказка" id="491"/>
+									<Events>
+										<Event name="OnChange">ТРЗпоСтатусамПериодПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ТРЗпоСтатусамСотрудник" id="492">
+									<DataPath>Объект.ТРЗпоСтатусам.Сотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамСотрудникКонтекстноеМеню" id="493"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамСотрудникРасширеннаяПодсказка" id="494"/>
+								</InputField>
+								<InputField name="ТРЗпоСтатусамЧасы" id="495">
+									<DataPath>Объект.ТРЗпоСтатусам.Часы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ТРЗпоСтатусам.TotalЧасы</FooterDataPath>
+									<FooterFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ТРЗпоСтатусамЧасыКонтекстноеМеню" id="496"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамЧасыРасширеннаяПодсказка" id="497"/>
+								</InputField>
+								<InputField name="ТРЗпоСтатусамСтатус" id="498">
+									<DataPath>Объект.ТРЗпоСтатусам.Статус</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамСтатусКонтекстноеМеню" id="499"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамСтатусРасширеннаяПодсказка" id="500"/>
+								</InputField>
+								<InputField name="ТРЗпоСтатусамКомментарий" id="501">
+									<DataPath>Объект.ТРЗпоСтатусам.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамКомментарийКонтекстноеМеню" id="502"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамКомментарийРасширеннаяПодсказка" id="503"/>
+								</InputField>
+								<PictureField name="ТРЗпоСтатусамСтатусЗанятостьВДень" id="504">
+									<DataPath>Объект.ТРЗпоСтатусам.СтатусЗанятостьВДень</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.СостояниеОбменаНСИ</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ТРЗпоСтатусамСтатусЗанятостьВДеньКонтекстноеМеню" id="505"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамСтатусЗанятостьВДеньРасширеннаяПодсказка" id="506"/>
+								</PictureField>
+								<InputField name="ТРЗпоСтатусамВсегоЗанятоЧасовВДень" id="507">
+									<DataPath>Объект.ТРЗпоСтатусам.ВсегоЗанятоЧасовВДень</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамВсегоЗанятоЧасовВДеньКонтекстноеМеню" id="508"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамВсегоЗанятоЧасовВДеньРасширеннаяПодсказка" id="509"/>
+								</InputField>
+								<InputField name="ТРЗпоСтатусамВсегоЗанятоЧасовВМесяц" id="510">
+									<DataPath>Объект.ТРЗпоСтатусам.ВсегоЗанятоЧасовВМесяц</DataPath>
+									<Enabled>false</Enabled>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Всего занято часов в месяц</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТРЗпоСтатусамВсегоЗанятоЧасовВМесяцКонтекстноеМеню" id="511"/>
+									<ExtendedTooltip name="ТРЗпоСтатусамВсегоЗанятоЧасовВМесяцРасширеннаяПодсказка" id="512"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ДействиеПоЗадаче</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="История" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>История</Action>
+		</Command>
+		<Command name="ОбновитьСтроки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить строки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСтроки</Action>
+		</Command>
+		<Command name="ПеренестиДанныеВРегистрЗадачиСотрудников" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести данные в регистр Задачи Сотрудников</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести данные в регистр задачи сотрудников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиДанныеВРегистрЗадачиСотрудников</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="2521575b-03d4-49ee-aff5-58777868d207">
+		<Name>ВРаботе</Name>
+		<Code>000000002</Code>
+		<Description>В работе</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ef013542-2b60-4595-b744-53f0ae126a4e">
+		<Name>Выполнено</Name>
+		<Code>000000003</Code>
+		<Description>Выполненная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e370c062-0a19-493e-98c2-f4d63f0dbafc">
+		<Name>Завершено</Name>
+		<Code>000000004</Code>
+		<Description>Завершено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ef4e3c33-cb38-4f0e-ac31-0d6dc08539a1">
+		<Name>Новая</Name>
+		<Code>000000001</Code>
+		<Description>Новая</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2896e4fe-82e7-43a8-bc37-25bacde539c8">
+		<Name>Отклонено</Name>
+		<Code>000000006</Code>
+		<Description>Отклонено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bbde165a-4cc3-4793-8c87-39310235f9dc">
+		<Name>Отложено</Name>
+		<Code>000000007</Code>
+		<Description>Отложено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c8391480-e3af-4df4-b544-7e786f5a44fd">
+		<Name>Отменено</Name>
+		<Code>000000008</Code>
+		<Description>Отменено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2b969ed1-e477-4c83-8c26-1a2cfcdaa708">
+		<Name>Черновик</Name>
+		<Code>000000005</Code>
+		<Description>Черновик</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

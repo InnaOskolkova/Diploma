@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="a311e6b8-3ef1-4353-992a-36ee2cbed4d6">
+		<Name>АдресIMAP</Name>
+		<Code>000000007</Code>
+		<Description>Адрес сервера IMAP</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="85b31470-2753-4fea-9ac3-f7815f869668">
+		<Name>АдресSMTP</Name>
+		<Code>000000008</Code>
+		<Description>Адрес сервера SMTP</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2de21a7d-1e87-4e8f-a5b1-2478d2fde762">
+		<Name>НаименованиеПрограммы</Name>
+		<Code>000000011</Code>
+		<Description>Наименование программы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="447ff463-0906-4fbc-bbf3-fdbef3ffa17d">
+		<Name>Настройка</Name>
+		<Code>000000001</Code>
+		<Description>Настройка на продуктиве</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="572c8961-cddb-4bbf-9e8e-70525ec03212">
+		<Name>ПарольУчетнойЗаписи</Name>
+		<Code>000000006</Code>
+		<Description>Пароль системной учетной записи электронной почты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b81cd974-ba1f-4e39-a9c4-b47bfcdd1d49">
+		<Name>Релиз</Name>
+		<Code>000000002</Code>
+		<Description>Перенос в релиз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7d5f80b-9f0d-4492-9132-65651e76ddc5">
+		<Name>ПортIMAP</Name>
+		<Code>000000009</Code>
+		<Description>Порт IMAP</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="137f1370-90f9-4096-81bd-aeea7b581189">
+		<Name>ПортSMTP</Name>
+		<Code>000000010</Code>
+		<Description>Порт SMTP</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e3576064-c253-4413-a38b-4e8e447e9fe1">
+		<Name>УчетнаяЗапись</Name>
+		<Code>000000005</Code>
+		<Description>Системная учетная запись электронной почты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dff4f7d5-02b9-467f-a3f6-ce5bb9fa8bf8">
+		<Name>Согласования</Name>
+		<Code>000000003</Code>
+		<Description>Согласования разработки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c4e3bb1e-ac3e-458c-8d4d-b8cf73beaa69">
+		<Name>Тестирование</Name>
+		<Code>000000004</Code>
+		<Description>Тестирование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

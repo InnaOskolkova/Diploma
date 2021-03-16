@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="ДатаЗаписи" id="1">
+			<DataPath>Запись.ДатаЗаписи</DataPath>
+			<ContextMenu name="ДатаЗаписиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаЗаписиРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="АвторИзменения" id="4">
+			<DataPath>Запись.АвторИзменения</DataPath>
+			<ContextMenu name="АвторИзмененияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="АвторИзмененияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Ссылка" id="7">
+			<DataPath>Запись.Ссылка</DataPath>
+			<ContextMenu name="СсылкаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Задача" id="10">
+			<DataPath>Запись.Задача</DataPath>
+			<ContextMenu name="ЗадачаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Инициатор" id="13">
+			<DataPath>Запись.Инициатор</DataPath>
+			<ContextMenu name="ИнициаторКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Исполнитель" id="16">
+			<DataPath>Запись.Исполнитель</DataPath>
+			<ContextMenu name="ИсполнительКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ДополнительныйИсполнитель" id="19">
+			<DataPath>Запись.ДополнительныйИсполнитель</DataPath>
+			<ContextMenu name="ДополнительныйИсполнительКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДополнительныйИсполнительРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Статус" id="22">
+			<DataPath>Запись.Статус</DataPath>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="КомментарийПоСменеСтатуса" id="25">
+			<DataPath>Запись.КомментарийПоСменеСтатуса</DataPath>
+			<ContextMenu name="КомментарийПоСменеСтатусаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КомментарийПоСменеСтатусаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ПлановыеТрудозатратыПоСтатусу" id="28">
+			<DataPath>Запись.ПлановыеТрудозатратыПоСтатусу</DataPath>
+			<ContextMenu name="ПлановыеТрудозатратыПоСтатусуКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПлановыеТрудозатратыПоСтатусуРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ПлановоеНачалоРаботПоСтатусу" id="31">
+			<DataPath>Запись.ПлановоеНачалоРаботПоСтатусу</DataPath>
+			<ContextMenu name="ПлановоеНачалоРаботПоСтатусуКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПлановоеНачалоРаботПоСтатусуРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ПлановоеОкончаниеРаботПоСтатусу" id="34">
+			<DataPath>Запись.ПлановоеОкончаниеРаботПоСтатусу</DataPath>
+			<ContextMenu name="ПлановоеОкончаниеРаботПоСтатусуКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ПлановоеОкончаниеРаботПоСтатусуРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ФактическиеТрудозатратыПоСтатусу" id="37">
+			<DataPath>Запись.ФактическиеТрудозатратыПоСтатусу</DataPath>
+			<ContextMenu name="ФактическиеТрудозатратыПоСтатусуКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ФактическиеТрудозатратыПоСтатусуРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ФактическоеНачалоРаботПоСтатусу" id="40">
+			<DataPath>Запись.ФактическоеНачалоРаботПоСтатусу</DataPath>
+			<ContextMenu name="ФактическоеНачалоРаботПоСтатусуКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ФактическоеНачалоРаботПоСтатусуРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="КомментарийПоЗадаче" id="43">
+			<DataPath>Запись.КомментарийПоЗадаче</DataPath>
+			<ContextMenu name="КомментарийПоЗадачеКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="КомментарийПоЗадачеРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="ПроцентВыполнения" id="46">
+			<DataPath>Запись.ПроцентВыполнения</DataPath>
+			<ContextMenu name="ПроцентВыполненияКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ПроцентВыполненияРасширеннаяПодсказка" id="48"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ИсторииЗадач</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

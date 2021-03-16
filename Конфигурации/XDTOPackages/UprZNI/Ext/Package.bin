@@ -1,0 +1,13 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://gazprom-neft.ru/ksunsi/1cksu/UprZNI">
+	<objectType name="List">
+		<property xmlns:d3p1="http://gazprom-neft.ru/ksunsi/1cksu/UprZNI" name="ZNI" type="d3p1:ZNI" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ZNI">
+		<property name="NUMBER" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="NAME" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="STATUS" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CUSTOMER" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="PERFORMER" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="FINAL" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+</package>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<DataProcessor uuid="32bd8ecd-c24d-4250-a161-bb74364a0a6c">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.УправлениеГрафикамиРаботы" category="Object">
+				<xr:TypeId>3bc655e6-be8d-416d-84f0-294ce1581db5</xr:TypeId>
+				<xr:ValueId>f8ad8b5d-c2ed-4d5d-b9c8-7731018727db</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.УправлениеГрафикамиРаботы" category="Manager">
+				<xr:TypeId>05042bd9-9588-48a6-be89-2f213398603b</xr:TypeId>
+				<xr:ValueId>66aa0d68-7055-435f-8fbe-8f56b21d281a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УправлениеГрафикамиРаботы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление графиками работы сотрудника</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.УправлениеГрафикамиРаботы.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="487340eb-0b72-43ec-905c-506c82b3f85a">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.УправлениеГрафикамиРаботы.ГрафикРаботы" category="TabularSection">
+						<xr:TypeId>87bdcc3e-f9e1-42a6-8ed1-180face04137</xr:TypeId>
+						<xr:ValueId>87dbf08c-1f78-4f44-a4fa-ff7294e6ed14</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.УправлениеГрафикамиРаботы.ГрафикРаботы" category="TabularSectionRow">
+						<xr:TypeId>598b9652-8480-40fb-a7bd-017a5d51839c</xr:TypeId>
+						<xr:ValueId>0c6e7933-ec3e-44a5-8389-507d7088d96e</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ГрафикРаботы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>График работы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>
