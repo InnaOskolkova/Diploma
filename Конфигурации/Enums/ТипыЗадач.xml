@@ -114,18 +114,6 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="964e306e-dd41-4dd3-894a-b6ccaf352519">
-				<Properties>
-					<Name>Ошибка</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ошибка</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
 			<EnumValue uuid="26d29ead-78e1-4658-a1d4-9fe27dfaf635">
 				<Properties>
 					<Name>Проект</Name>
@@ -133,18 +121,6 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Проект</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="3e709945-dc6c-46b5-b7af-d2361973012c">
-				<Properties>
-					<Name>Прочее</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Прочее</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
