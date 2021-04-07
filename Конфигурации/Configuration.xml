@@ -145,11 +145,11 @@
 			<Catalog>Курсы</Catalog>
 			<Catalog>Отпуска</Catalog>
 			<Catalog>Календари</Catalog>
+			<Catalog>ТипыЗадач</Catalog>
 			<Document>ДействиеПоЗадаче</Document>
-			<Enum>ТипыЗадач</Enum>
 			<Enum>ВидыВремениРаботы</Enum>
 			<Enum>ВидыДнейПроизводственногоКалендаря</Enum>
-			<Enum>ТипыВыходнгоДня</Enum>
+			<Enum>ВидыВыходногоДня</Enum>
 			<Enum>ТипыПриоритетов</Enum>
 			<Report>Направления</Report>
 			<Report>РесурсноеПланирование</Report>
@@ -157,10 +157,12 @@
 			<Report>Курсы</Report>
 			<Report>Отпуска</Report>
 			<Report>Оценка</Report>
+			<Report>Занятость</Report>
 			<DataProcessor>ПочтовоеУведомление</DataProcessor>
 			<DataProcessor>СдвигЗадач</DataProcessor>
 			<DataProcessor>УправлениеГрафикамиРаботы</DataProcessor>
 			<DataProcessor>УправлениеПроизводственнымКалендарем</DataProcessor>
+			<DataProcessor>РабочийСтол</DataProcessor>
 			<InformationRegister>ЗадачиСотрудников</InformationRegister>
 			<InformationRegister>ИсторииЗадач</InformationRegister>
 			<InformationRegister>ОтпускаСотрудников</InformationRegister>

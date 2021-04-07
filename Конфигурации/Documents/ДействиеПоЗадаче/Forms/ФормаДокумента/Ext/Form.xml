@@ -189,7 +189,6 @@
 								<InputField name="ПлановоеОкончаниеРаботПоСтатусу" id="98">
 									<DataPath>Объект.ПлановоеОкончаниеРаботПоСтатусу</DataPath>
 									<TitleTextColor>style:SpecialTextColor</TitleTextColor>
-									<TitleFont ref="style:TextFont" kind="StyleItem"/>
 									<ContextMenu name="ПлановоеОкончаниеРаботПоСтатусуКонтекстноеМеню" id="99"/>
 									<ExtendedTooltip name="ПлановоеОкончаниеРаботПоСтатусуРасширеннаяПодсказка" id="100"/>
 								</InputField>

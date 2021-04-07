@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="8d72d86d-229d-4acb-a95a-c3d6d0455a21">
+		<Name>ЗадачаНаИзменение</Name>
+		<Code>000000001</Code>
+		<Description>Задача на изменение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="01667e04-2b2a-4881-9e66-a80038ec3002">
+		<Name>ЗадачаНаИзменениеБезТЗ</Name>
+		<Code>000000002</Code>
+		<Description>Задача на изменение без ТЗ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9be3cd52-eedd-495b-985b-eec684b78cd7">
+		<Name>Проект</Name>
+		<Code>000000003</Code>
+		<Description>Проект</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8c116db6-4913-4512-8b2b-77690b25e4e8">
+		<Name>Сервис</Name>
+		<Code>000000004</Code>
+		<Description>Сервис</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

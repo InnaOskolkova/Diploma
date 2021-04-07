@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
-	<DataProcessor uuid="7d249bda-1f64-4d8a-8fad-1c6372af90ca">
+	<DataProcessor uuid="f4808f0e-4828-4576-87aa-9820643bcfb2">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.УправлениеПроизводственнымКалендарем" category="Object">
-				<xr:TypeId>2974986e-a904-48f9-8556-9e548d573acd</xr:TypeId>
-				<xr:ValueId>b50a6588-c888-4a98-837e-0f76630178ef</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorObject.РабочийСтол" category="Object">
+				<xr:TypeId>92ce23f6-9bf1-448e-8440-03c0b2cdbc95</xr:TypeId>
+				<xr:ValueId>65c86581-a2c1-4393-8c28-2f31e24f8fb2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.УправлениеПроизводственнымКалендарем" category="Manager">
-				<xr:TypeId>396b8b24-45c5-434d-9321-4e236f4242b0</xr:TypeId>
-				<xr:ValueId>f737c51c-56ee-4bdc-b55a-e30860b15f33</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorManager.РабочийСтол" category="Manager">
+				<xr:TypeId>90877d86-59ba-45ec-8e70-1cd8ea748fa5</xr:TypeId>
+				<xr:ValueId>bcba557b-a851-4dea-bc1b-d1d5cd9a8dac</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>УправлениеПроизводственнымКалендарем</Name>
+			<Name>РабочийСтол</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Управление производственным календарем (штатная выгрузка в xml?)</v8:content>
+					<v8:content>Рабочий стол</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>DataProcessor.УправлениеПроизводственнымКалендарем.Form.Форма</DefaultForm>
+			<DefaultForm>DataProcessor.РабочийСтол.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>

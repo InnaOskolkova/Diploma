@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="75">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<InputField name="Сотрудник" id="1">
+					<DataPath>Сотрудник</DataPath>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">СотрудникПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="Согласования" id="72">
+					<DataPath>Согласования</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СогласованияКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="СогласованияРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">СогласованияПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="70">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<Table name="ПодготовкаТЗ" id="4">
+					<TitleLocation>Top</TitleLocation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ПодготовкаТЗ</DataPath>
+					<RowPictureDataPath>ПодготовкаТЗ.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ПодготовкаТЗКонтекстноеМеню" id="5"/>
+					<AutoCommandBar name="ПодготовкаТЗКоманднаяПанель" id="6">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПодготовкаТЗРасширеннаяПодсказка" id="7"/>
+					<SearchStringAddition name="ПодготовкаТЗСтрокаПоиска" id="8">
+						<AdditionSource>
+							<Item>ПодготовкаТЗ</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодготовкаТЗСтрокаПоискаКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="ПодготовкаТЗСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодготовкаТЗСостояниеПросмотра" id="11">
+						<AdditionSource>
+							<Item>ПодготовкаТЗ</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодготовкаТЗСостояниеПросмотраКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ПодготовкаТЗСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодготовкаТЗУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>ПодготовкаТЗ</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодготовкаТЗУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ПодготовкаТЗУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ПодготовкаТЗЗадачаКод" id="43">
+							<DataPath>ПодготовкаТЗ.Задача.Code</DataPath>
+							<ContextMenu name="ПодготовкаТЗЗадачаКодКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ПодготовкаТЗЗадачаКодРасширеннаяПодсказка" id="45"/>
+						</LabelField>
+						<LabelField name="ПодготовкаТЗЗадачаНаименование" id="46">
+							<DataPath>ПодготовкаТЗ.Задача.Description</DataPath>
+							<ContextMenu name="ПодготовкаТЗЗадачаНаименованиеКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ПодготовкаТЗЗадачаНаименованиеРасширеннаяПодсказка" id="48"/>
+						</LabelField>
+						<LabelField name="ПодготовкаТЗПлановоеОкончаниеРаботПоСтатусу" id="49">
+							<DataPath>ПодготовкаТЗ.ПлановоеОкончаниеРаботПоСтатусу</DataPath>
+							<ContextMenu name="ПодготовкаТЗПлановоеОкончаниеРаботПоСтатусуКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ПодготовкаТЗПлановоеОкончаниеРаботПоСтатусуРасширеннаяПодсказка" id="51"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="СогласованиеТЗ" id="17">
+					<Visible>false</Visible>
+					<TitleLocation>Top</TitleLocation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СогласованиеТЗ</DataPath>
+					<RowPictureDataPath>СогласованиеТЗ.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СогласованиеТЗКонтекстноеМеню" id="18"/>
+					<AutoCommandBar name="СогласованиеТЗКоманднаяПанель" id="19">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СогласованиеТЗРасширеннаяПодсказка" id="20"/>
+					<SearchStringAddition name="СогласованиеТЗСтрокаПоиска" id="21">
+						<AdditionSource>
+							<Item>СогласованиеТЗ</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СогласованиеТЗСтрокаПоискаКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="СогласованиеТЗСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СогласованиеТЗСостояниеПросмотра" id="24">
+						<AdditionSource>
+							<Item>СогласованиеТЗ</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СогласованиеТЗСостояниеПросмотраКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="СогласованиеТЗСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СогласованиеТЗУправлениеПоиском" id="27">
+						<AdditionSource>
+							<Item>СогласованиеТЗ</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СогласованиеТЗУправлениеПоискомКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="СогласованиеТЗУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СогласованиеТЗЗадачаКод" id="52">
+							<DataPath>СогласованиеТЗ.Задача.Code</DataPath>
+							<ContextMenu name="СогласованиеТЗЗадачаКодКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="СогласованиеТЗЗадачаКодРасширеннаяПодсказка" id="54"/>
+						</LabelField>
+						<LabelField name="СогласованиеТЗЗадачаНаименование" id="55">
+							<DataPath>СогласованиеТЗ.Задача.Description</DataPath>
+							<ContextMenu name="СогласованиеТЗЗадачаНаименованиеКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="СогласованиеТЗЗадачаНаименованиеРасширеннаяПодсказка" id="57"/>
+						</LabelField>
+						<LabelField name="СогласованиеТЗПлановоеОкончаниеРаботПоСтатусу" id="58">
+							<DataPath>СогласованиеТЗ.ПлановоеОкончаниеРаботПоСтатусу</DataPath>
+							<ContextMenu name="СогласованиеТЗПлановоеОкончаниеРаботПоСтатусуКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="СогласованиеТЗПлановоеОкончаниеРаботПоСтатусуРасширеннаяПодсказка" id="60"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="ВРаботе" id="30">
+					<TitleLocation>Top</TitleLocation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ВРаботе</DataPath>
+					<RowPictureDataPath>ВРаботе.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ВРаботеКонтекстноеМеню" id="31"/>
+					<AutoCommandBar name="ВРаботеКоманднаяПанель" id="32">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ВРаботеРасширеннаяПодсказка" id="33"/>
+					<SearchStringAddition name="ВРаботеСтрокаПоиска" id="34">
+						<AdditionSource>
+							<Item>ВРаботе</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВРаботеСтрокаПоискаКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ВРаботеСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВРаботеСостояниеПросмотра" id="37">
+						<AdditionSource>
+							<Item>ВРаботе</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВРаботеСостояниеПросмотраКонтекстноеМеню" id="38"/>
+						<ExtendedTooltip name="ВРаботеСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВРаботеУправлениеПоиском" id="40">
+						<AdditionSource>
+							<Item>ВРаботе</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВРаботеУправлениеПоискомКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ВРаботеУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ВРаботеЗадачаКод" id="61">
+							<DataPath>ВРаботе.Задача.Code</DataPath>
+							<ContextMenu name="ВРаботеЗадачаКодКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ВРаботеЗадачаКодРасширеннаяПодсказка" id="63"/>
+						</LabelField>
+						<LabelField name="ВРаботеЗадачаНаименование" id="64">
+							<DataPath>ВРаботе.Задача.Description</DataPath>
+							<ContextMenu name="ВРаботеЗадачаНаименованиеКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ВРаботеЗадачаНаименованиеРасширеннаяПодсказка" id="66"/>
+						</LabelField>
+						<LabelField name="ВРаботеПлановоеОкончаниеРаботПоСтатусу" id="67">
+							<DataPath>ВРаботе.ПлановоеОкончаниеРаботПоСтатусу</DataPath>
+							<ContextMenu name="ВРаботеПлановоеОкончаниеРаботПоСтатусуКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ВРаботеПлановоеОкончаниеРаботПоСтатусуРасширеннаяПодсказка" id="69"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Сотрудник" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>Сотрудник</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Исполнители</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПодготовкаТЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подготовка ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ДействиеПоЗадаче</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РаботыВыполнены</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПлановоеОкончаниеРаботПоСтатусу</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ПлановоеОкончаниеРаботПоСтатусу</dcsset:left>
+									<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="v8:StandardBeginningDate">
+										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+									</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВРаботе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В работе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ДействиеПоЗадаче</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РаботыВыполнены</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПлановоеОкончаниеРаботПоСтатусу</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ПлановоеОкончаниеРаботПоСтатусу</dcsset:left>
+									<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="v8:StandardBeginningDate">
+										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+									</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СогласованиеТЗ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласование ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ДействиеПоЗадаче</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РаботыВыполнены</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Согласования" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

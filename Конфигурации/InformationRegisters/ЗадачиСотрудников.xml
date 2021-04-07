@@ -335,7 +335,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ТипыЗадач</v8:Type>
+						<v8:Type>cfg:CatalogRef.ТипыЗадач</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

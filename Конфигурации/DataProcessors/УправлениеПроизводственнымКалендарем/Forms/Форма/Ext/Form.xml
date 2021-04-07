@@ -98,10 +98,10 @@
 			<CommandName>Form.Command.ВыгрузкаПроизводственногоКалендаря</CommandName>
 			<ExtendedTooltip name="ВыгрузкаПроизводственногоКалендаряРасширеннаяПодсказка" id="2"/>
 		</Button>
-		<Button name="ЗагрузкаПроизводственногоКалендяя" id="3">
+		<Button name="ЗагрузкаПроизводственногоКалендаря" id="8">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ЗагрузкаПроизводственногоКалендяя</CommandName>
-			<ExtendedTooltip name="ЗагрузкаПроизводственногоКалендяяРасширеннаяПодсказка" id="4"/>
+			<CommandName>Form.Command.ЗагрузкаПроизводственногоКалендаря</CommandName>
+			<ExtendedTooltip name="ЗагрузкаПроизводственногоКалендаряРасширеннаяПодсказка" id="9"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -144,19 +144,20 @@
 			</ToolTip>
 			<Action>ВыгрузкаПроизводственногоКалендаря</Action>
 		</Command>
-		<Command name="ЗагрузкаПроизводственногоКалендяя" id="2">
+		<Command name="ЗагрузкаПроизводственногоКалендаря" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузка производственного календяя</v8:content>
+					<v8:content>Загрузка производственного календаря</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузка производственного календяя</v8:content>
+					<v8:content>Загрузка производственного календаря</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>ЗагрузкаПроизводственногоКалендаря</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -27,6 +27,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СдвигЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеГрафикамиРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеПроизводственнымКалендарем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочийСтол</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

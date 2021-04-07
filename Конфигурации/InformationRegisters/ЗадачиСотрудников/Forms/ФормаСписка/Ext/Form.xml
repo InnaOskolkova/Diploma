@@ -103,11 +103,6 @@
 				</LabelField>
 			</ChildItems>
 		</Table>
-		<Button name="ОбновитьОтпускаСотрудников" id="29">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ОбновитьОтпускаСотрудников</CommandName>
-			<ExtendedTooltip name="ОбновитьОтпускаСотрудниковРасширеннаяПодсказка" id="30"/>
-		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -138,21 +133,4 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="ОбновитьОтпускаСотрудников" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить отпуска сотрудников</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить отпуска сотрудников</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОбновитьОтпускаСотрудников</Action>
-		</Command>
-	</Commands>
 </Form>

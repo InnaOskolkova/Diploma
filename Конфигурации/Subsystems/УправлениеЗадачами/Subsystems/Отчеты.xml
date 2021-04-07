@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Курсы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Отпуска</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Оценка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Занятость</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
