@@ -11,8 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Инициаторы</v8:Type>
-				<v8:Type>cfg:CatalogRef.Исполнители</v8:Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 		</Properties>
 	</SessionParameter>

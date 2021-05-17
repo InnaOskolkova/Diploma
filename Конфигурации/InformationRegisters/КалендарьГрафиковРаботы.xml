@@ -246,16 +246,16 @@
 			</Resource>
 			<Dimension uuid="a75291c3-adb8-4c1f-9a0c-1272de656934">
 				<Properties>
-					<Name>Сотрудник</Name>
+					<Name>Исполнитель</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сотрудник</v8:content>
+							<v8:content>Исполнитель</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Исполнители</v8:Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -277,7 +277,11 @@
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
+					<ChoiceParameters>
+						<app:item name="Отбор.Исполнитель">
+							<app:value xsi:type="xs:boolean">true</app:value>
+						</app:item>
+					</ChoiceParameters>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>

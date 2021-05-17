@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="b5a744ca-f6c3-44db-8465-43fac26901cf">
+		<Name>Настройка</Name>
+		<Code>000000004</Code>
+		<Description>Настройка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5cc40aa5-25e6-47fc-aa1d-a0e6f19cf7f2">
+		<Name>ПереносВХранилище</Name>
+		<Code>000000003</Code>
+		<Description>Перенос в хранилище</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="31dd0e3b-eb98-43e8-a003-6c962973d275">
+		<Name>СогласованиеКода</Name>
+		<Code>000000002</Code>
+		<Description>Согласование кода</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0aa7ba0c-71ea-4e29-bdda-a98401494bad">
+		<Name>Тестирование</Name>
+		<Code>000000001</Code>
+		<Description>Тестирование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,207 +1,177 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
-	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
-	</Events>
 	<ChildItems>
-		<InputField name="Сотрудник" id="33">
-			<DataPath>Сотрудник</DataPath>
-			<ContextMenu name="СотрудникКонтекстноеМеню" id="34"/>
-			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="35"/>
-		</InputField>
-		<InputField name="Год" id="30">
-			<DataPath>Год</DataPath>
-			<DropListButton>true</DropListButton>
-			<ChoiceList>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2021</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2022</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2023</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2024</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2025</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2026</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2027</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2028</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2029</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation/>
-						<Value xsi:type="xs:decimal">2030</Value>
-					</xr:Value>
-				</xr:Item>
-			</ChoiceList>
-			<ContextMenu name="ГодКонтекстноеМеню" id="31"/>
-			<ExtendedTooltip name="ГодРасширеннаяПодсказка" id="32"/>
-		</InputField>
-		<Button name="ПоказатьГрафикРаботы" id="22">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ПоказатьГрафикРаботы</CommandName>
-			<ExtendedTooltip name="ПоказатьГрафикРаботыРасширеннаяПодсказка" id="23"/>
-		</Button>
-		<Button name="ИзменитьГрафикРаботы" id="4">
-			<Type>UsualButton</Type>
-			<Enabled>false</Enabled>
-			<CommandName>Form.Command.ИзменитьГрафикРаботы</CommandName>
-			<ExtendedTooltip name="ИзменитьГрафикРаботыРасширеннаяПодсказка" id="5"/>
-		</Button>
-		<Button name="СохранитьИменения" id="58">
-			<Type>UsualButton</Type>
-			<Enabled>false</Enabled>
-			<CommandName>Form.Command.СохранитьИменения</CommandName>
-			<ExtendedTooltip name="СохранитьИмененияРасширеннаяПодсказка" id="59"/>
-		</Button>
-		<Table name="ГрафикРаботы" id="36">
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.ГрафикРаботы</DataPath>
-			<CommandSet>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>MoveUp</ExcludedCommand>
-				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
-				<ExcludedCommand>EndEdit</ExcludedCommand>
-				<ExcludedCommand>Add</ExcludedCommand>
-				<ExcludedCommand>MoveDown</ExcludedCommand>
-			</CommandSet>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ГрафикРаботыКонтекстноеМеню" id="37"/>
-			<AutoCommandBar name="ГрафикРаботыКоманднаяПанель" id="38"/>
-			<ExtendedTooltip name="ГрафикРаботыРасширеннаяПодсказка" id="39"/>
-			<SearchStringAddition name="ГрафикРаботыСтрокаПоиска" id="40">
-				<AdditionSource>
-					<Item>ГрафикРаботы</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ГрафикРаботыСтрокаПоискаКонтекстноеМеню" id="41"/>
-				<ExtendedTooltip name="ГрафикРаботыСтрокаПоискаРасширеннаяПодсказка" id="42"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ГрафикРаботыСостояниеПросмотра" id="43">
-				<AdditionSource>
-					<Item>ГрафикРаботы</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ГрафикРаботыСостояниеПросмотраКонтекстноеМеню" id="44"/>
-				<ExtendedTooltip name="ГрафикРаботыСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ГрафикРаботыУправлениеПоиском" id="46">
-				<AdditionSource>
-					<Item>ГрафикРаботы</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ГрафикРаботыУправлениеПоискомКонтекстноеМеню" id="47"/>
-				<ExtendedTooltip name="ГрафикРаботыУправлениеПоискомРасширеннаяПодсказка" id="48"/>
-			</SearchControlAddition>
+		<UsualGroup name="Группа1" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="73"/>
 			<ChildItems>
-				<LabelField name="ГрафикРаботыНомерСтроки" id="49">
-					<DataPath>Объект.ГрафикРаботы.LineNumber</DataPath>
-					<Enabled>false</Enabled>
-					<EditMode>EnterOnInput</EditMode>
-					<BackColor>style:FormBackColor</BackColor>
-					<ContextMenu name="ГрафикРаботыНомерСтрокиКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ГрафикРаботыНомерСтрокиРасширеннаяПодсказка" id="51"/>
-				</LabelField>
-				<InputField name="ГрафикРаботыПериод" id="66">
-					<DataPath>Объект.ГрафикРаботы.Период</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<BackColor>style:FormBackColor</BackColor>
-					<ContextMenu name="ГрафикРаботыПериодКонтекстноеМеню" id="67"/>
-					<ExtendedTooltip name="ГрафикРаботыПериодРасширеннаяПодсказка" id="68"/>
-				</InputField>
-				<InputField name="ГрафикРаботыДеньНедели" id="63">
-					<DataPath>Объект.ГрафикРаботы.ДеньНедели</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<BackColor>style:FormBackColor</BackColor>
-					<ContextMenu name="ГрафикРаботыДеньНеделиКонтекстноеМеню" id="64"/>
-					<ExtendedTooltip name="ГрафикРаботыДеньНеделиРасширеннаяПодсказка" id="65"/>
-				</InputField>
-				<InputField name="ГрафикРаботыВидВремениРаботы" id="69">
-					<DataPath>Объект.ГрафикРаботы.ВидВремениРаботы</DataPath>
-					<Enabled>false</Enabled>
-					<EditMode>EnterOnInput</EditMode>
-					<ChoiceButton>true</ChoiceButton>
-					<BackColor>style:FormBackColor</BackColor>
-					<ContextMenu name="ГрафикРаботыВидВремениРаботыКонтекстноеМеню" id="70"/>
-					<ExtendedTooltip name="ГрафикРаботыВидВремениРаботыРасширеннаяПодсказка" id="71"/>
+				<InputField name="Исполнитель" id="33">
+					<DataPath>Исполнитель</DataPath>
+					<ClearButton>true</ClearButton>
+					<ChoiceParameters>
+						<app:item name="Отбор.Исполнитель">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:boolean">true</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="35"/>
 					<Events>
-						<Event name="OnChange">ГрафикРаботыВидВремениРаботыПриИзменении</Event>
+						<Event name="OnChange">ИсполнительПриИзменении</Event>
 					</Events>
 				</InputField>
-				<CheckBoxField name="ГрафикРаботыИзменен" id="60">
-					<DataPath>Объект.ГрафикРаботы.Изменен</DataPath>
-					<Visible>false</Visible>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ГрафикРаботыИзмененКонтекстноеМеню" id="61"/>
-					<ExtendedTooltip name="ГрафикРаботыИзмененРасширеннаяПодсказка" id="62"/>
-				</CheckBoxField>
+				<InputField name="Год" id="30">
+					<DataPath>Год</DataPath>
+					<Width>7</Width>
+					<DropListButton>true</DropListButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ГодКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ГодРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="OnChange">ГодПриИзменении</Event>
+						<Event name="StartChoice">ГодНачалоВыбора</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="74">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="75"/>
+			<ChildItems>
+				<Button name="ПоказатьГрафикРаботы" id="22">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПоказатьГрафикРаботы</CommandName>
+					<ExtendedTooltip name="ПоказатьГрафикРаботыРасширеннаяПодсказка" id="23"/>
+				</Button>
+				<Button name="ИзменитьГрафикРаботы" id="4">
+					<Type>UsualButton</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.ИзменитьГрафикРаботы</CommandName>
+					<ExtendedTooltip name="ИзменитьГрафикРаботыРасширеннаяПодсказка" id="5"/>
+				</Button>
+				<Button name="СохранитьИменения" id="58">
+					<Type>UsualButton</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.СохранитьИменения</CommandName>
+					<ExtendedTooltip name="СохранитьИмененияРасширеннаяПодсказка" id="59"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>График работы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<Table name="ГрафикРаботы" id="36">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ГрафикРаботы</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ГрафикРаботыКонтекстноеМеню" id="37"/>
+					<AutoCommandBar name="ГрафикРаботыКоманднаяПанель" id="38"/>
+					<ExtendedTooltip name="ГрафикРаботыРасширеннаяПодсказка" id="39"/>
+					<SearchStringAddition name="ГрафикРаботыСтрокаПоиска" id="40">
+						<AdditionSource>
+							<Item>ГрафикРаботы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГрафикРаботыСтрокаПоискаКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ГрафикРаботыСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ГрафикРаботыСостояниеПросмотра" id="43">
+						<AdditionSource>
+							<Item>ГрафикРаботы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГрафикРаботыСостояниеПросмотраКонтекстноеМеню" id="44"/>
+						<ExtendedTooltip name="ГрафикРаботыСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ГрафикРаботыУправлениеПоиском" id="46">
+						<AdditionSource>
+							<Item>ГрафикРаботы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ГрафикРаботыУправлениеПоискомКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ГрафикРаботыУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ГрафикРаботыНомерСтроки" id="49">
+							<DataPath>Объект.ГрафикРаботы.LineNumber</DataPath>
+							<Enabled>false</Enabled>
+							<EditMode>EnterOnInput</EditMode>
+							<BackColor>style:FormBackColor</BackColor>
+							<ContextMenu name="ГрафикРаботыНомерСтрокиКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ГрафикРаботыНомерСтрокиРасширеннаяПодсказка" id="51"/>
+						</LabelField>
+						<InputField name="ГрафикРаботыПериод" id="66">
+							<DataPath>Объект.ГрафикРаботы.Период</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<BackColor>style:FormBackColor</BackColor>
+							<ContextMenu name="ГрафикРаботыПериодКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ГрафикРаботыПериодРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ГрафикРаботыДеньНедели" id="63">
+							<DataPath>Объект.ГрафикРаботы.ДеньНедели</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<BackColor>style:FormBackColor</BackColor>
+							<ContextMenu name="ГрафикРаботыДеньНеделиКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ГрафикРаботыДеньНеделиРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="ГрафикРаботыВидВремениРаботы" id="69">
+							<DataPath>Объект.ГрафикРаботы.ВидВремениРаботы</DataPath>
+							<Enabled>false</Enabled>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<BackColor>style:FormBackColor</BackColor>
+							<ContextMenu name="ГрафикРаботыВидВремениРаботыКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ГрафикРаботыВидВремениРаботыРасширеннаяПодсказка" id="71"/>
+							<Events>
+								<Event name="OnChange">ГрафикРаботыВидВремениРаботыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="ГрафикРаботыИзменен" id="60">
+							<DataPath>Объект.ГрафикРаботы.Изменен</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ГрафикРаботыИзмененКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ГрафикРаботыИзмененРасширеннаяПодсказка" id="62"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -241,15 +211,15 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Сотрудник" id="4">
+		<Attribute name="Исполнитель" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сотрудник</v8:content>
+					<v8:content>Исполнитель</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Исполнители</v8:Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

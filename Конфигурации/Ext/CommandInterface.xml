@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
 	<SubsystemsOrder>
-		<Subsystem>0a3490eb-c93c-48f8-96d0-68b8cdade029</Subsystem>
-		<Subsystem>e193177d-4afe-4141-bc43-595102b51537</Subsystem>
+		<Subsystem>Subsystem.УправлениеЗадачами</Subsystem>
+		<Subsystem>f31a62c3-a7c8-4eb9-97be-8f2702ed56db</Subsystem>
+		<Subsystem>Subsystem.УправлениеРесурсами</Subsystem>
+		<Subsystem>bde3d0b3-1bdd-4864-9117-84ec29531dd3</Subsystem>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
 	</SubsystemsOrder>
 </CommandInterface>

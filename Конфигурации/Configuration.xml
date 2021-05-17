@@ -28,11 +28,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>БазаРазработкиНовыхПодсистем</Name>
+			<Name>УправлениеСервисомИТ</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>База разработки новых подсистем</v8:content>
+					<v8:content>Управление сервисом ИТ</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -119,55 +119,58 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>УправлениеЗадачами</Subsystem>
-			<CommonPicture>СостояниеОбменаНСИ</CommonPicture>
+			<Subsystem>УправлениеРесурсами</Subsystem>
+			<Subsystem>Администрирование</Subsystem>
+			<CommonPicture>СостояниеЗадач</CommonPicture>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
-			<Role>ВебСервис</Role>
-			<Role>Исполнитель</Role>
-			<Role>Координатор</Role>
-			<Role>Отчеты</Role>
-			<Role>ПолныеПрава</Role>
-			<Role>Просмотр</Role>
-			<CommonModule>СтроковыеФункции</CommonModule>
-			<CommonModule>ПочтовоеУведомление</CommonModule>
-			<CommonModule>ПроцедурыНадРегистрами</CommonModule>
-			<CommonModule>ФункцииПроверки</CommonModule>
-			<CommonModule>СдвигЗадач</CommonModule>
-			<XDTOPackage>UprZNI</XDTOPackage>
-			<WebService>ПолучитьЗадачи</WebService>
+			<Role>Администратор</Role>
+			<Role>БазовыеПрава</Role>
+			<Role>ЧтениеПросмотрЗаявок</Role>
+			<Role>ДобавлениеИзменениеЗаявок</Role>
+			<Role>ЧтениеПросмотрДокументовУправлениеЗадачей</Role>
+			<Role>ДобавлениеИзменениеДокументовУправлениеЗадачей</Role>
+			<Role>ЧтениеПросмотрЗадач</Role>
+			<Role>ДобавлениеИзменениеЗадач</Role>
+			<Role>ЧтениеПросмотрДокументовНевыходы</Role>
+			<Role>ДобавлениеИзменениеДокументовНевыходы</Role>
+			<Role>ЧтениеПросмотрСотрудников</Role>
+			<Role>ДобавлениеИзменениеСотруджников</Role>
+			<Role>ЧтениеПросмотрВспомогательныхСправочников</Role>
+			<Role>ДобавлениеИзменениеВспомогательныхСправочников</Role>
+			<Role>ПросмотрОтчетов</Role>
+			<Role>ИспользованиеУправлениеГрафикамиРаботы</Role>
 			<Catalog>БизнесРешения</Catalog>
-			<Catalog>Задачи</Catalog>
-			<Catalog>Инициаторы</Catalog>
-			<Catalog>Исполнители</Catalog>
-			<Catalog>Координаторы</Catalog>
-			<Catalog>Направления</Catalog>
-			<Catalog>ПредопределенныеЭлементы</Catalog>
-			<Catalog>Статусы</Catalog>
-			<Catalog>Курсы</Catalog>
-			<Catalog>Отпуска</Catalog>
+			<Catalog>Заявки</Catalog>
 			<Catalog>Календари</Catalog>
+			<Catalog>КонстантыРасчетаЭтапов</Catalog>
+			<Catalog>Направления</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Сотрудники</Catalog>
+			<Catalog>Статусы</Catalog>
 			<Catalog>ТипыЗадач</Catalog>
-			<Document>ДействиеПоЗадаче</Document>
+			<Catalog>УчетныеЗаписиЭлПочты</Catalog>
+			<Document>УправлениеЗадачей</Document>
+			<Document>Невыходы</Document>
 			<Enum>ВидыВремениРаботы</Enum>
 			<Enum>ВидыДнейПроизводственногоКалендаря</Enum>
 			<Enum>ВидыВыходногоДня</Enum>
 			<Enum>ТипыПриоритетов</Enum>
-			<Report>Направления</Report>
+			<Report>ГрафикиРаботыИсполнителей</Report>
+			<Report>КомпетенцииИсполнителей</Report>
+			<Report>НевыходыИсполнителей</Report>
 			<Report>РесурсноеПланирование</Report>
-			<Report>Задачи</Report>
-			<Report>Курсы</Report>
-			<Report>Отпуска</Report>
-			<Report>Оценка</Report>
-			<Report>Занятость</Report>
-			<DataProcessor>ПочтовоеУведомление</DataProcessor>
-			<DataProcessor>СдвигЗадач</DataProcessor>
+			<Report>СостояниеЗадач</Report>
 			<DataProcessor>УправлениеГрафикамиРаботы</DataProcessor>
 			<DataProcessor>УправлениеПроизводственнымКалендарем</DataProcessor>
-			<DataProcessor>РабочийСтол</DataProcessor>
-			<InformationRegister>ЗадачиСотрудников</InformationRegister>
-			<InformationRegister>ИсторииЗадач</InformationRegister>
-			<InformationRegister>ОтпускаСотрудников</InformationRegister>
+			<DataProcessor>КонтрольЗадач</DataProcessor>
+			<DataProcessor>МоиЗадачи</DataProcessor>
+			<InformationRegister>ПланированиеТРЗ</InformationRegister>
+			<InformationRegister>НевыходыИсполнителей</InformationRegister>
 			<InformationRegister>КалендарьГрафиковРаботы</InformationRegister>
 			<InformationRegister>ПроизводственныйКалендарь</InformationRegister>
+			<InformationRegister>ИсторияУправлениеЗадачей</InformationRegister>
+			<InformationRegister>ИсторияНевыходы</InformationRegister>
+			<Task>ЗадачиИсполнителя</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

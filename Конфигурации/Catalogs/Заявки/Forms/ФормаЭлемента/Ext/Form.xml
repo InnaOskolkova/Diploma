@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="31">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="37">
+					<Group>Horizontal</Group>
+					<ChildrenAlign>TitlesLeftDataLeft</ChildrenAlign>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="33">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Автор" id="49">
+									<DataPath>Объект.Автор</DataPath>
+									<DropListButton>false</DropListButton>
+									<ContextMenu name="АвторКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="ТипЗаявки" id="25">
+									<DataPath>Объект.Тип</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТипЗаявкиКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ТипЗаявкиРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="Инициатор" id="16">
+									<DataPath>Объект.Инициатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="ИнициаторКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа6" id="47">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="35">
+									<Group>Horizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="36"/>
+									<ChildItems>
+										<InputField name="Код" id="55">
+											<DataPath>Объект.Code</DataPath>
+											<ContextMenu name="КодКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="57"/>
+										</InputField>
+										<InputField name="ДатаЗаявки" id="13">
+											<DataPath>Объект.ДатаЗаявки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаЗаявкиКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ДатаЗаявкиРасширеннаяПодсказка" id="15"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5" id="45">
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="46"/>
+									<ChildItems>
+										<InputField name="БизнесРешение" id="10">
+											<DataPath>Объект.БизнесРешение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="БизнесРешениеКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="БизнесРешениеРасширеннаяПодсказка" id="12"/>
+										</InputField>
+										<InputField name="Направление" id="19">
+											<DataPath>Объект.Направление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НаправлениеКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="21"/>
+										</InputField>
+										<InputField name="Приоритет" id="52">
+											<DataPath>Объект.Приоритет</DataPath>
+											<ContextMenu name="ПриоритетКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="54"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа7" id="43">
+					<Width>1</Width>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="Комментарий" id="28">
+							<DataPath>Объект.Комментарий</DataPath>
+							<Width>90</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Заявки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

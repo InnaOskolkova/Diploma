@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="75">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<InputField name="Исполнитель" id="1">
+					<DataPath>Исполнитель</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ИсполнительПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="МоиЗадачи" id="212">
+					<DataPath>МоиЗадачи</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="МоиЗадачиКонтекстноеМеню" id="213"/>
+					<ExtendedTooltip name="МоиЗадачиРасширеннаяПодсказка" id="214"/>
+					<Events>
+						<Event name="OnChange">МоиЗадачиПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="70">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<Table name="ПодготовкаТЗ" id="4">
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>4</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ПодготовкаТЗ</DataPath>
+					<RowPictureDataPath>ПодготовкаТЗ.DefaultPicture</RowPictureDataPath>
+					<TitleTextColor>web:ForestGreen</TitleTextColor>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>61</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ПодготовкаТЗКонтекстноеМеню" id="5"/>
+					<AutoCommandBar name="ПодготовкаТЗКоманднаяПанель" id="6">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПодготовкаТЗРасширеннаяПодсказка" id="7"/>
+					<SearchStringAddition name="ПодготовкаТЗСтрокаПоиска" id="8">
+						<AdditionSource>
+							<Item>ПодготовкаТЗ</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодготовкаТЗСтрокаПоискаКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="ПодготовкаТЗСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодготовкаТЗСостояниеПросмотра" id="11">
+						<AdditionSource>
+							<Item>ПодготовкаТЗ</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодготовкаТЗСостояниеПросмотраКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ПодготовкаТЗСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодготовкаТЗУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>ПодготовкаТЗ</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодготовкаТЗУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ПодготовкаТЗУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ПодготовкаТЗЗадачаКод" id="43">
+							<DataPath>ПодготовкаТЗ.Заявка.Code</DataPath>
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ПодготовкаТЗЗадачаКодКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ПодготовкаТЗЗадачаКодРасширеннаяПодсказка" id="45"/>
+						</LabelField>
+						<LabelField name="ПодготовкаТЗЗадачаНаименование" id="46">
+							<DataPath>ПодготовкаТЗ.Заявка.Description</DataPath>
+							<Width>10</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ПодготовкаТЗЗадачаНаименованиеКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ПодготовкаТЗЗадачаНаименованиеРасширеннаяПодсказка" id="48"/>
+						</LabelField>
+						<LabelField name="ПодготовкаТЗДатаФинала" id="99">
+							<DataPath>ПодготовкаТЗ.ДатаФинала</DataPath>
+							<Width>9</Width>
+							<ContextMenu name="ПодготовкаТЗДатаФиналаКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ПодготовкаТЗДатаФиналаРасширеннаяПодсказка" id="101"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="СогласованиеТЗ" id="105">
+					<TitleLocation>Top</TitleLocation>
+					<Height>4</Height>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СогласованиеТЗ</DataPath>
+					<RowPictureDataPath>СогласованиеТЗ.DefaultPicture</RowPictureDataPath>
+					<TitleTextColor>#339966</TitleTextColor>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СогласованиеТЗКонтекстноеМеню" id="106"/>
+					<AutoCommandBar name="СогласованиеТЗКоманднаяПанель" id="107">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СогласованиеТЗРасширеннаяПодсказка" id="108"/>
+					<SearchStringAddition name="СогласованиеТЗСтрокаПоиска" id="109">
+						<AdditionSource>
+							<Item>СогласованиеТЗ</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СогласованиеТЗСтрокаПоискаКонтекстноеМеню" id="110"/>
+						<ExtendedTooltip name="СогласованиеТЗСтрокаПоискаРасширеннаяПодсказка" id="111"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СогласованиеТЗСостояниеПросмотра" id="112">
+						<AdditionSource>
+							<Item>СогласованиеТЗ</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СогласованиеТЗСостояниеПросмотраКонтекстноеМеню" id="113"/>
+						<ExtendedTooltip name="СогласованиеТЗСостояниеПросмотраРасширеннаяПодсказка" id="114"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СогласованиеТЗУправлениеПоиском" id="115">
+						<AdditionSource>
+							<Item>СогласованиеТЗ</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СогласованиеТЗУправлениеПоискомКонтекстноеМеню" id="116"/>
+						<ExtendedTooltip name="СогласованиеТЗУправлениеПоискомРасширеннаяПодсказка" id="117"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СогласованиеТЗЗаявкаКод" id="206">
+							<DataPath>СогласованиеТЗ.Заявка.Code</DataPath>
+							<ContextMenu name="СогласованиеТЗЗаявкаКодКонтекстноеМеню" id="207"/>
+							<ExtendedTooltip name="СогласованиеТЗЗаявкаКодРасширеннаяПодсказка" id="208"/>
+						</LabelField>
+						<LabelField name="СогласованиеТЗЗаявкаНаименование" id="209">
+							<DataPath>СогласованиеТЗ.Заявка.Description</DataPath>
+							<ContextMenu name="СогласованиеТЗЗаявкаНаименованиеКонтекстноеМеню" id="210"/>
+							<ExtendedTooltip name="СогласованиеТЗЗаявкаНаименованиеРасширеннаяПодсказка" id="211"/>
+						</LabelField>
+						<LabelField name="СогласованиеТЗДатаФинала" id="127">
+							<DataPath>СогласованиеТЗ.ДатаФинала</DataPath>
+							<Width>9</Width>
+							<ContextMenu name="СогласованиеТЗДатаФиналаКонтекстноеМеню" id="128"/>
+							<ExtendedTooltip name="СогласованиеТЗДатаФиналаРасширеннаяПодсказка" id="129"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="ВРаботе" id="30">
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>4</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ВРаботе</DataPath>
+					<RowPictureDataPath>ВРаботе.DefaultPicture</RowPictureDataPath>
+					<TitleTextColor>web:ForestGreen</TitleTextColor>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ВРаботеКонтекстноеМеню" id="31"/>
+					<AutoCommandBar name="ВРаботеКоманднаяПанель" id="32">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ВРаботеРасширеннаяПодсказка" id="33"/>
+					<SearchStringAddition name="ВРаботеСтрокаПоиска" id="34">
+						<AdditionSource>
+							<Item>ВРаботе</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВРаботеСтрокаПоискаКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ВРаботеСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВРаботеСостояниеПросмотра" id="37">
+						<AdditionSource>
+							<Item>ВРаботе</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВРаботеСостояниеПросмотраКонтекстноеМеню" id="38"/>
+						<ExtendedTooltip name="ВРаботеСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВРаботеУправлениеПоиском" id="40">
+						<AdditionSource>
+							<Item>ВРаботе</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВРаботеУправлениеПоискомКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ВРаботеУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ВРаботеЗадачаКод" id="61">
+							<DataPath>ВРаботе.Заявка.Code</DataPath>
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ВРаботеЗадачаКодКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ВРаботеЗадачаКодРасширеннаяПодсказка" id="63"/>
+						</LabelField>
+						<LabelField name="ВРаботеЗадачаНаименование" id="64">
+							<DataPath>ВРаботе.Заявка.Description</DataPath>
+							<Width>10</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ВРаботеЗадачаНаименованиеКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ВРаботеЗадачаНаименованиеРасширеннаяПодсказка" id="66"/>
+						</LabelField>
+						<LabelField name="ВРаботеДатаФинала" id="102">
+							<DataPath>ВРаботе.ДатаФинала</DataPath>
+							<Width>9</Width>
+							<ContextMenu name="ВРаботеДатаФиналаКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ВРаботеДатаФиналаРасширеннаяПодсказка" id="104"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтрольЗадач</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Исполнитель" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>Исполнитель</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПодготовкаТЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подготовка ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.УправлениеЗадачей</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РаботыВыполнены</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПлановоеОкончаниеРаботПоСтатусу</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ПлановоеОкончаниеРаботПоСтатусу</dcsset:left>
+									<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="v8:StandardBeginningDate">
+										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+									</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВРаботе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В работе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.УправлениеЗадачей</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РаботыВыполнены</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПлановоеОкончаниеРаботПоСтатусу</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ПлановоеОкончаниеРаботПоСтатусу</dcsset:left>
+									<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="v8:StandardBeginningDate">
+										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+									</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СогласованиеТЗ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласование ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.УправлениеЗадачей</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РаботыВыполнены</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="МоиЗадачи" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мои задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>МоиЗадачи</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+</Form>

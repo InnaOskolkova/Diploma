@@ -6,6 +6,12 @@
 		<Description>В работе</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="507ce347-4f6c-423d-a580-583c62495287">
+		<Name>Выполнено</Name>
+		<Code>000000006</Code>
+		<Description>Выполнено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="8eee23b4-55b3-484d-a653-ef7b86a7e7c8">
 		<Name>ПодготовкаДО</Name>
 		<Code>000000003</Code>
@@ -16,12 +22,6 @@
 		<Name>ПодготовкаТЗ</Name>
 		<Code>000000001</Code>
 		<Description>Подготовка ТЗ</Description>
-		<IsFolder>false</IsFolder>
-	</Item>
-	<Item id="507ce347-4f6c-423d-a580-583c62495287">
-		<Name>ПриемкаВЭксплуатацию</Name>
-		<Code>000000006</Code>
-		<Description>Приемка в эксплуатацию</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 	<Item id="2382e333-7923-4f84-8b52-d1379c7136da">

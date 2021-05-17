@@ -15,16 +15,19 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">WebService.ПолучитьЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Заявки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БизнесРешения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Статусы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Направления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УправлениеЗадачей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыПриоритетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонтрольЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПланированиеТРЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачиИсполнителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СостояниеЗадач</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects>
-			<Subsystem>Основные</Subsystem>
-			<Subsystem>Вспомогательные</Subsystem>
-			<Subsystem>Служебные</Subsystem>
-			<Subsystem>Отчеты</Subsystem>
-			<Subsystem>Сервис</Subsystem>
-			<Subsystem>Накопительные</Subsystem>
-		</ChildObjects>
+		<ChildObjects/>
 	</Subsystem>
 </MetaDataObject>
